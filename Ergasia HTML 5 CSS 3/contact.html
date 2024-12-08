@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Επικοινωνία</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rouxa2">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Η Εταιρεία μας!</a></li>
+                <li><a href="contact.html">Επικοινωνίστε μαζί μας!</a></li>
+                <li><a href="multimedia.html">Βίντεο!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+            
+            <form action="submit_form.php" method="POST">
+                <label for="name">Όνομα (Υποχρεωτικό πεδίο)</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email (Υποχρεωτικό πεδίο, έλενγχος μορφής)</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="subject">Θέμα (Υποχρεωτικό πεδίο)</label>
+                <input type="text" id="subject" name="subject" required><br>
+
+                <label for="message">Το μήνυμά σας (ελάχιστο μήκος 15 χαρακτήρες)</label>
+                <input type="text" id="message" name="message" required minlength="15"><br>
+
+                <label for="age">Ηλικία (Ελάχιστη τιμή 18)</label>
+                <input type="number" id="age" name="age" required min="18" class="age"><br>
+
+                <label for="gender">Φύλο</label>
+                <select class="gender">
+                    <option class="woman"> Γυναίκα</option>
+                    <option class="man"> Άνδρας</option>
+                </select> <br>               
+            
+                <label for="button" class="button">Αποστολή Μυνήματος</label>
+                <input type="button" id="button" name="button">
+
+            </form> 
+
+    <footer>
+        <p>© 2024 Η ΕΤΑΙΡΕΙΑ ΔΙΑΤΗΡΕΙ ΟΛΑ ΤΑ ΝΟΜΙΜΑ ΔΙΚΑΙΩΜΑΤΑ</p>
+    </footer>
+</body>
+</html>
